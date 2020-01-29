@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import  { Redirect } from 'react-router-dom';
+import  { Redirect,useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import Form from 'react-bootstrap/Form';
 import FormGroup from 'react-bootstrap/FormGroup';
@@ -11,7 +11,7 @@ import PasswordField from '../../components/Forms/PasswordField';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import TitleBand from '../../components/TitleBand';
-
+import SpinnerContainer     from '../../components/Spinner';
 
 const LoginPage = ({ doLogin, error,token }) => {
 
@@ -27,8 +27,19 @@ const LoginPage = ({ doLogin, error,token }) => {
 
 
     });
-
+ let history = useHistory();
    
+    if(token != null)
+    {debugger;
+       
+      
+
+         history.push("/login",null);
+           return (<Redirect to='/Dashboard/welcomPage'  />)
+           
+
+
+    }
 
     return (
 
@@ -71,7 +82,8 @@ const LoginPage = ({ doLogin, error,token }) => {
 
                             <div className="tab-content" id="myTabContent">
                                 <div className="tab-pane fade show active" id="login-tab-content" role="tabpanel" aria-labelledby="login-tab">
-
+                                    
+                                     <SpinnerContainer >
                                     <Formik
                                         validationSchema={schema}
                                         initialValues={{
@@ -109,7 +121,7 @@ const LoginPage = ({ doLogin, error,token }) => {
                                                   
                                                           {    error != null ?  (<div class="alert alert-danger" role="alert">
                                                           {error}
-                                                       </div>):  token != null ? <Redirect to='/Dashboard/welcomPage'  /> : null }
+                                                       </div>):  null}
 
                                                    
                                                         <FormGroup controlId="validationFormikemail" className="mb-4">
@@ -169,6 +181,7 @@ const LoginPage = ({ doLogin, error,token }) => {
                                                 </Form>
                                             )}
                                     </Formik>
+                                    </SpinnerContainer>
                                 </div>
                                 <div className="tab-pane fade" id="signup-tab-content" role="tabpanel" aria-labelledby="signup-tab"></div>
 

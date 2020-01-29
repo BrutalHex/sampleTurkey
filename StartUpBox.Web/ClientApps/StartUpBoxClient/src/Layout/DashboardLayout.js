@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-
+ 
 import '../style/dashboard.scss';
 import AppNavbar from '../components/appNavbar';
 
@@ -35,7 +35,7 @@ export class DashboardLayout extends Component {
 
 
 }
-export const DashboardLayoutRoute = ({ component: Component, ...rest }) => {
+export const DashboardLayoutRoute =  (({ component: Component, ...rest }) => {
     return (<DashboardLayout>
         <Route {...rest} render={(matchProps) => (
 
@@ -45,6 +45,6 @@ export const DashboardLayoutRoute = ({ component: Component, ...rest }) => {
         )} /> </DashboardLayout>
     )
 
-}
+})
 
 export default DashboardLayoutRoute;  

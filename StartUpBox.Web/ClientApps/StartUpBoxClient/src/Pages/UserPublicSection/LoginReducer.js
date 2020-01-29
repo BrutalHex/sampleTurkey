@@ -9,7 +9,7 @@ export function loginReducer(state=initialState,action)
     
          if(action.type.indexOf('FETCH_SUCCESS_')>-1)
          {
-              debugger;
+            
 
                 if(action.recievedData.hasOwnProperty('error'))
                  {

@@ -16,7 +16,7 @@ import loginPageContainer from './Pages/UserPublicSection/LoginPageContainer'
 
  
 
-function App( ) {
+function App(  ) {
   return (
     
 

@@ -18,7 +18,7 @@ const AppNavbar = ({ }) => (
      <Navbar bg="transparent" collapseOnSelect expand="lg" className="d-flex"
      >
         
-         <NavbarBrand href="~/" 
+         <NavbarBrand href="/" 
          className="col-7 ml-n3 ml-sm-0 col-sm-3 col-lg-3 col-xl-2 pl-lg-0 mr-1 scale-down">
         
          <img
