@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\StartUpBox.Framework\StartUpBox.Framework.csproj" />
+    <ProjectReference Include="..\StartUpBox.Domain\StartUpBox.Domain.csproj" />
+    <ProjectReference Include="..\StartUpBox.RepositoryContract\StartUpBox.RepositoryContract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>

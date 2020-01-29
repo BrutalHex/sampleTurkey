@@ -1,0 +1,275 @@
+
+
+  $general-border: 1px solid #F2F2F2;
+  $general-background-color: #FBFBFB;
+  $general-color:#1A003A;
+  $link-color:#BCBCBC;
+  $light-background:#8C809C;
+  
+  @mixin disable-background-color{
+    background-color: $general-background-color;
+  }
+
+  .disabled{
+    color: #BCBCBC;
+}
+.btn-light{
+    background-color: $light-background;
+    border: 0;
+}
+
+.input-group-text{
+    border: none;
+}
+
+.navbar-toggler{
+
+
+.navbar-toggler-icon{
+    background-image:url('/images/toggler.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+    @media (max-width: 992px){
+        background-color: $light-background;
+        padding: 0;
+          border-radius: 50%;
+    }
+
+}
+
+
+
+.text-link {
+    &:hover,&:active{
+        text-decoration: none;
+  
+    }
+    color: #BCBCBC;
+    font-size: 14px;
+     
+        @media (max-width: 700px) {
+     font-size: 12px;
+   }
+  }
+
+.custom-bread{
+
+    .breadcrumb-item+.breadcrumb-item::before{
+          content:quote(">");
+    }
+
+
+    .breadcrumb{ 
+ 
+         background-color: transparent;
+    }
+  
+
+    font-family: 'Greycliff CF';
+    font-size: 14px;
+    border-bottom: $general-border;
+ 
+}
+
+.nav-tabs{
+    
+        .disabled-nav-item{
+            @include disable-background-color;
+        }
+
+    .nav-item{
+           text-align: center;
+        .show .nav-link,  .nav-link.active
+          {
+              border: none;
+          }
+
+        border: $general-border;
+        .nav-link{
+
+                 font-size: 16px;
+        font-weight: 500;
+        }
+
+        .active{
+            
+       
+        color:$general-color;
+        }
+        
+    }
+}
+
+
+
+
+.menu-bar
+{
+
+    background-color:$general-color;
+
+
+    .navbar-brand{
+        &:hover{
+            color: #fff;
+        }
+        color: #fff;
+       
+       
+    }
+
+    .navbar-nav  .nav-link{
+        &:hover{
+            color:#FFF;
+            font-weight: 800;
+        }
+    color:#756688;
+    font-size: 15px;
+    .btn{
+        border:none;
+        height: 36px;
+        margin-top:-5px
+
+    }
+  }
+
+
+}
+
+
+
+
+
+
+.custom-form {
+  
+    border-bottom:  $general-border;
+
+    .title{
+
+        color: $general-color;
+
+    }
+
+ 
+    .input-group-text{
+        background-color: $general-background-color;
+        border :$general-border;
+        border-right: 0px;
+    }
+
+  
+
+    .form-input {
+        border :$general-border;
+         background-color: $general-background-color;
+          border-left: 0px;
+        
+         
+
+        &:disabled, &[readonly]
+        {
+            background-color: #545751;
+            color: #fff;
+        }
+        height: 58px;
+    }
+
+    
+    .form-footer {
+        margin: 20px 0px 60px 0px;
+     
+        
+     
+    }
+
+  
+
+    .password-input{
+        background-color:#e6f2f5;
+    }
+
+     .btn-primary
+     {
+         border: 0px;
+     }
+
+}
+
+
+ 
+
+div[type=invalid]
+{
+    color: red;
+    margin-bottom: 0px;
+}
+
+
+@mixin erro_border{border-color: #ed1515 !important; border: 1px solid #ed1515  !important; border-radius: 5px;;}
+.is-invalid{
+  border: none;;
+}
+
+.invalid-input{
+    @include erro_border;
+
+   .form-control{
+       border: none;
+       &:focus{
+        border: 0px  ;
+        box-shadow:none;
+       }
+   }
+
+
+}
+
+ 
+btn {
+    border-radius: 5px;
+}
+.btn-primary{
+  
+    height: 58px;
+   
+    background-color: #6B10DA;
+}
+ 
+Button{
+    img{
+         width: 20px;
+    height: 20px;
+  margin:0px 10px 0px 10px;
+    }
+   
+}
+
+.center {
+    display:block;
+    margin: 0 auto;
+}
+ 
+.left-arrow{
+    &:before{
+        content:quote("<");
+        margin-right: 10px;
+    }
+}
+.square-btn{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.scale-down{
+    @media (max-width: 340px){
+        transform: scale(0.75);
+    }
+}
+
+
+ 

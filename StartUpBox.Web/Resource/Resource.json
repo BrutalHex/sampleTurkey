@@ -1,0 +1,21 @@
+﻿{
+
+  "Entity.UserName": {
+    "Values": {
+
+      "en-US": "UserName"
+    }
+  },
+
+  "UserEntity": {
+
+    "Values": {
+
+      "en-US": "'User'"
+    }
+  }
+
+
+
+
+}

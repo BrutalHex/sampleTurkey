@@ -1,0 +1,36 @@
+.login{
+
+ 
+.right-section{
+    min-height: 400px;
+    background: url('/images/right-picture.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+.dropdown {
+   
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+
+    .dropdown-toggle{
+     color:#1A003A;
+    &:after
+{
+    content:quote(">");
+    content: ">";
+    transform: rotate(90deg);
+    top: 7px;
+    left: 10px;
+    position: relative;
+    border:none;
+}
+
+}
+}
+
+
+}

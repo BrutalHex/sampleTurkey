@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <None Remove="Resource.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StartUpBox.Domain\StartUpBox.Domain.csproj" />
+    <ProjectReference Include="..\StartUpBox.Dto\StartUpBox.Dto.csproj" />
+    <ProjectReference Include="..\StartUpBox.RepositoryContract\StartUpBox.RepositoryContract.csproj" />
+    <ProjectReference Include="..\StartUpBox.ServiceContract\StartUpBox.ServiceContract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Askmethat.Aspnet.JsonLocalizer" Version="2.1.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>
